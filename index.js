@@ -75,7 +75,7 @@ console.log('-----ปริ้นทั้งหมด-----' + JSON.stringify(da
 function data_enter(sende_r, beacon_id) {
 
 
-   var checktime = "https://script.google.com/macros/s/AKfycbxx7J-TT0M7Bz1Q1pnVL9xu8FlHp3aUwbV50m3ZhmtJUZhy_HU/exec?userId="+sende_r+"&beaconid="+beacon_id;
+   var checktime = "https://script.google.com/macros/s/AKfycbyTIX-Q_cWcEGBLUpJjg5gSPNnZ3Io3v20k67o4/exec?userId="+sende_r+"&beaconid="+beacon_id;
  request(checktime, function (error, response, body) {
 
 })
@@ -108,10 +108,10 @@ var options = {
         var info = JSON.parse(body);
         name = info.displayName;
         
-          if(beacon_id == "013bb81f59"){
+          if(beacon_id == "01433e1b66"){
          var msg = {
            "type": "text",
-           "text": "ระบบได้บันทึกการตรวจจุดตรวจหน้า บ.เซาท์อีสต์ เอเชีย ของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
+           "text": "ระบบได้บันทึกการตรวจจุดตรวจบ้านพักพนักงานของ"+" " +name +" " + "ไว้เรียบร้อยแล้ว"
 
           }; 
         reply(reToken, msg, sende_r, beacon_id);    
